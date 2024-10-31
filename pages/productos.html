@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fondo</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header{
+            height: 100px;
+        }
+        .padre{
+            background-color: orange;
+        }
+        .oscurecer{
+            background-color: rgba(22, 22, 22, 0.469);
+            width:100%;
+            height:100vh;
+            position:absolute;
+            top:0;
+            z-index:9;
+           /* position:absolute;
+            top:0;
+            left:0;
+            z-index: 10;*/
+        }
+        
+        .fondo{
+            background-image: url("../assets/img/mascotas_1920.jpg");
+            background-size: cover;
+            background-position: center;
+           /* background-color: rgb(255, 255, 255);*/
+            width: 100%;
+            height: 100vh;
+            color:rgb(255, 255, 255);
+             z-index:8;
+
+        }
+        .contenido{
+            position:absolute;
+            top: 50vh;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index:10;
+            color:white;
+        }
+
+    </style>
+</head>
+<body>
+   
+    <section class="padre">
+        <div class="oscurecer">
+        </div>
+        <section class="fondo">
+        </section>
+    </section>
+    <section class="contenido">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum dolores quas culpa magnam aut, quo, modi eaque, quae saepe veniam rem dolorem? Dolor esse laudantium reiciendis voluptatum nihil, praesentium est?</p>
+    </section>
+    
+</body>
+</html>
